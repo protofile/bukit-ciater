@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6{
     @apply bg-black;
   }
   .site-header.scrolled .nav-inner{
-    @apply p-2;
+    @apply py-2;
   }
 
   .brand {
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6{
 
   .header-left,
   .header-right {
-    @apply flex items-center gap-4;
+    @apply flex items-center gap-0 md:gap-4;
   }
 
   .burger {
@@ -181,10 +181,6 @@ h1, h2, h3, h4, h5, h6{
 
   .header-right .btn-primary {
     @apply bg-[var(--accent-gold)] hover:bg-amber-600;
-  }
-
-  .header-right .btn-outline {
-    @apply bg-transparent border border-white text-white hover:bg-white/10;
   }
 
   .hero {
@@ -681,6 +677,10 @@ h1, h2, h3, h4, h5, h6{
     .gallery-thumbs .owl-nav {
       @apply static mt-4 transform-none;
     }
+
+      .header-right .btn-outline {
+        @apply bg-transparent border-none md:border md:border-white text-white hover:bg-white/10 px-2;
+      }
   }
 
   .gallery-subtitle {
