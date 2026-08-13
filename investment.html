@@ -40,8 +40,37 @@
             </div>
 
             <div class="header-right">
-                <a href="#book" class="btn-outline">BOOK RESORT</a>
-                <a href="#buy" class="btn-outline">BUY VILLA</a>
+                <a href="#book" class="btn-outline flex items-center gap-2 pl-3 pr-3">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-notebook-pen-icon lucide-notebook-pen">
+                            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+                            <path d="M2 6h4" />
+                            <path d="M2 10h4" />
+                            <path d="M2 14h4" />
+                            <path d="M2 18h4" />
+                            <path
+                                d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+                        </svg>
+                    </div>
+                    <span class="hidden md:block">BOOK RESORT</span>
+                </a>
+                <a href="#buy" class="btn-outline flex items-center gap-2 pl-3 pr-3">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-handshake-icon lucide-handshake">
+                            <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                            <path
+                                d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+                            <path d="m21 3 1 11h-2" />
+                            <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                            <path d="M3 4h8" />
+                        </svg>
+                    </div>
+                    <span class="hidden md:block">BUY VILLA</span>
+                </a>
             </div>
         </div>
     </header>
@@ -171,13 +200,15 @@
                         </div>
                         <div class="grid grid-cols-2 gap-5 mb-5">
                             <div class="col-span-1">
-                                <div class="flex flex-col gap-2 bg-white rounded-[3px] px-6 py-4">
+                                <div
+                                    class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
                                     <p class="leading-5">Projected Rental Yield Up To</p>
                                     <div class="text-4xl text-right">57%</div>
                                 </div>
                             </div>
                             <div class="col-span-1">
-                                <div class="flex flex-col gap-2 bg-white rounded-[3px] px-6 py-4">
+                                <div
+                                    class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
                                     <p class="leading-5">Projected Capital Growth</p>
                                     <div class="text-4xl text-right">34%</div>
                                 </div>
@@ -185,43 +216,51 @@
                         </div>
                         <div class="grid grid-cols-2 gap-5">
                             <div class="col-span-1">
-                                <div class="flex flex-col gap-2 bg-white rounded-[3px] px-6 py-4">
+                                <div
+                                    class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
                                     <p class="leading-5">Break-even Period</p>
                                     <div class="text-4xl text-right">5thn</div>
                                 </div>
                             </div>
                             <div class="col-span-1">
-                                <div class="flex flex-col gap-2 bg-white rounded-[3px] px-6 py-4">
+                                <div
+                                    class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
                                     <p class="leading-5">AVG Annual ROI</p>
                                     <div class="text-4xl text-right">12%</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 md:col-span-2">
-                        <div class="bg-[var(--brand-forest)] p-8 rounded-[3px]">
+                    <div class="col-span-1 md:col-span-2 bg-[var(--brand-forest)] rounded-[3px]">
+                        <div class="p-8">
                             <h4 class="text-white text-2xl mb-8">Ilustrasi 1 BR Private Pool Villa</h4>
-                            <div class="flex justify-between border-b border-b-slate-300 text-white text-sm py-3">
+                            <div
+                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
                                 <p>Harga awal</p>
                                 <p>Rp 3.900.000.000</p>
                             </div>
-                            <div class="flex justify-between border-b border-b-slate-300 text-white text-sm py-3">
+                            <div
+                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
                                 <p>Estimasi occupancy</p>
                                 <p>72%</p>
                             </div>
-                            <div class="flex justify-between border-b border-b-slate-300 text-white text-sm py-3">
+                            <div
+                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
                                 <p>Average nightly rate</p>
                                 <p>Rp 4.500.000</p>
                             </div>
-                            <div class="flex justify-between border-b border-b-slate-300 text-white text-sm py-3">
+                            <div
+                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
                                 <p>Gross rental/tahun</p>
                                 <p>Rp 1.180.000.000</p>
                             </div>
-                            <div class="flex justify-between border-b border-b-slate-300 text-white text-sm py-3">
+                            <div
+                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
                                 <p>Net to owner (after 35% mgmt)</p>
                                 <p>Rp 768.000.000</p>
                             </div>
-                            <div class="flex justify-between border-b border-b-slate-300 text-white text-sm py-3">
+                            <div
+                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
                                 <p>Yield</p>
                                 <p>19,6%</p>
                             </div>
