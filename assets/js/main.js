@@ -123,4 +123,13 @@ $(document).ready(function(){
   $(".close-bt").click(function(){
     $(".pop-menu").removeClass("show");
   });
+
+  $(".amenities-nav").click(function(an){
+    an.preventDefault();
+
+    $(".amenities-nav").removeClass("active");
+    $(this).addClass("active");
+    $(".amenities-tab-item").removeClass("show");
+    $($(this).attr("href")).addClass("show");
+  });
 });

@@ -577,6 +577,9 @@ h1, h2, h3, h4, h5, h6{
     @apply border border-[var(--brand-forest)] py-1 px-1 flex text-center text-[var(--brand-forest)] justify-center mx-1 rounded-full transition-all bg-white hover:bg-[var(--brand-forest)] hover:text-white;
     font-family: var(--barlow-condensed);
   }
+  .amenities-nav.active{
+    @apply bg-[var(--brand-forest)] text-white;
+  }
 
   .amenities-slider img{
     @apply rounded-[3px];
@@ -866,5 +869,12 @@ h1, h2, h3, h4, h5, h6{
   .footer-site {
     @apply bg-black text-slate-200 pt-12;
   }
+}
+
+.amenities-tab-item{
+  @apply hidden;
+}
+.amenities-tab-item.show{
+  @apply block;
 }
 

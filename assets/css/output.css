@@ -1514,6 +1514,12 @@ video {
   font-family: var(--barlow-condensed);
 }
 
+.amenities-nav.active {
+  background-color: var(--brand-forest);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .amenities-slider img {
   border-radius: 3px;
 }
@@ -2449,13 +2455,12 @@ video {
   border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
 }
 
-.border-b-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\] {
-  border-bottom-color: rgba(255,255,255,0.2);
+.border-b-\[rgba\(255\2c 255\2c 255\2c 0\.15\)\] {
+  border-bottom-color: rgba(255,255,255,0.15);
 }
 
-.border-b-slate-300 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+.border-b-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\] {
+  border-bottom-color: rgba(255,255,255,0.2);
 }
 
 .border-l-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\] {
@@ -2468,10 +2473,6 @@ video {
 
 .border-t-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\] {
   border-top-color: rgba(255,255,255,0.2);
-}
-
-.border-b-\[rgba\(255\2c 255\2c 255\2c 0\.15\)\] {
-  border-bottom-color: rgba(255,255,255,0.15);
 }
 
 .bg-\[var\(--accent-cream\)\] {
@@ -3040,6 +3041,14 @@ h1, h2, h3, h4, h5, h6{
 .hotel-card .price span {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.amenities-tab-item {
+  display: none;
+}
+
+.amenities-tab-item.show {
+  display: block;
 }
 
 .focus\:border-amber-500:focus {
