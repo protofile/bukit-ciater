@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6{
   @apply w-full;
 }
 .hotel-card .text-group{
-  @apply flex flex-col gap-4 p-10 w-full;
+  @apply flex flex-col gap-4 p-6 md:p-10 w-full;
 }
 .hotel-card .text-group .hotel-card-subtitle{
   @apply text-sm text-slate-700;

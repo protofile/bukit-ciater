@@ -2492,6 +2492,11 @@ video {
   background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
 }
 
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -3013,7 +3018,13 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   flex-direction: column;
   gap: 1rem;
-  padding: 2.5rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hotel-card .text-group {
+    padding: 2.5rem;
+  }
 }
 
 .hotel-card .text-group .hotel-card-subtitle {
