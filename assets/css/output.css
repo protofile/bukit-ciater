@@ -993,6 +993,11 @@ video {
   background-color: rgb(180 83 9 / var(--tw-bg-opacity, 1));
 }
 
+.btn-primary.muted {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
 .btn-outline {
   border-radius: 3px;
   border-width: 1px;
@@ -2490,11 +2495,6 @@ video {
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {

@@ -296,6 +296,10 @@ h1, h2, h3, h4, h5, h6{
     @apply rounded-[3px] bg-[var(--accent-gold)] px-5 py-3 text-sm font-normal text-white shadow-sm hover:bg-amber-700;
   }
 
+  .btn-primary.muted{
+    @apply opacity-30 pointer-events-none;
+  }
+
   .btn-outline {
     @apply rounded-[3px] border border-[rgba(255,255,255,0.5)] px-8 py-2.5 text-xs tracking-widest font-light text-white hover:bg-slate-100;
   }
