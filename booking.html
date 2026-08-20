@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Bukit Ciater Resort & Spa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@100;300;400;700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-3fK6jPq8TBmVXXyBmpXHALhHSorFoet1pYpO4Ujyv8OOtBObS+c2N47e2xOlXIXKiWgYwC2xj27KHiGj4C54mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/output.css" />
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+    <header id="site-header" class="site-header">
+        <div class="container nav-inner">
+            <div class="header-left">
+                <button class="burger" id="burger">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                    <span class="text-sm font-medium">MENU</span>
+                </button>
+            </div>
+
+            <div class="header-logo">
+                <img src="assets/images/bukit-ciater-resort-and-spa-logo.png" alt="Bukit Ciater Logo" width="94"
+                    height="80" />
+            </div>
+
+            <div class="header-right">
+                <a href="hotel.html" class="btn-outline flex items-center gap-2 pl-3 pr-3">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-notebook-pen-icon lucide-notebook-pen">
+                            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+                            <path d="M2 6h4" />
+                            <path d="M2 10h4" />
+                            <path d="M2 14h4" />
+                            <path d="M2 18h4" />
+                            <path
+                                d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+                        </svg>
+                    </div>
+                    <span class="hidden md:block">BOOK RESORT</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="pop-menu">
+        <div class="text-overlay">Menu</div>
+        <button class="close-bt">X</button>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="villas.html">VILLAS</a></li>
+            <li><a href="hotel.html">HOTEL</a></li>
+            <li><a href="investment.html">INVESTMENT</a></li>
+            <li><a href="facilities.html">FACILITIES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Page Cover -->
+        <section class="page-cover">
+            <div class="container">
+                <div class="section-title">
+                    <div class="subtitle">BOOK YOUR STAY</div>
+                    <h1>Book Your Room</h1>
+                </div>
+            </div>
+        </section>
+        <section class="py-24">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-5">
+                        <div class="rounded-[3px] overflow-hidden">
+                            <img src="assets/images/hotel_reserve.png" alt="Booking illustration"
+                                class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-7">
+                        <div class="p-6 bg-white rounded-[3px] shadow-sm">
+                            <h2 class="text-2xl mb-4">Book Your Stay</h2>
+                            <form action="" class="book-form-2 grid grid-cols-1 gap-4">
+                                <div class="flex gap-4">
+                                    <div class="inp-group w-1/2 relative">
+                                        <label>Nama Depan</label>
+                                        <input type="text" name="first_name" placeholder="Nama Depan" />
+                                    </div>
+                                    <div class="inp-group w-1/2 relative">
+                                        <label>Nama Belakang</label>
+                                        <input type="text" name="last_name" placeholder="Nama Belakang" />
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4">
+                                    <div class="inp-group w-1/2 relative">
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="email@contoh.com" />
+                                    </div>
+                                    <div class="inp-group w-1/2 relative">
+                                        <label>No. Handphone</label>
+                                        <input type="tel" name="phone" placeholder="0812xxxxxxx" />
+                                    </div>
+                                </div>
+
+                                <div class="inp-group relative">
+                                    <label>Tipe Kamar</label>
+                                    <select name="room_type">
+                                        <option value="" disabled selected>Pilih Tipe Kamar</option>
+                                        <option value="suite">Suite</option>
+                                        <option value="deluxe">Deluxe</option>
+                                        <option value="standard">Standard</option>
+                                    </select>
+                                </div>
+
+                                <div class="flex gap-4">
+                                    <div class="w-1/2">
+                                        <div class="inp-group relative">
+                                            <label>Tanggal Check In</label>
+                                            <input type="date" name="checkin_date" class="pick-date" />
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="inp-group relative">
+                                            <label>Jam Check In</label>
+                                            <input type="time" name="checkin_time" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4">
+                                    <div class="w-1/2">
+                                        <div class="inp-group relative">
+                                            <label>Tanggal Check Out</label>
+                                            <input type="date" name="checkout_date" class="pick-date" />
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="inp-group relative">
+                                            <label>Jam Check Out</label>
+                                            <input type="time" name="checkout_time" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="inp-group relative">
+                                    <label>Special request</label>
+                                    <textarea name="special_request" rows="4"
+                                        placeholder="Tulis permintaan khusus..."></textarea>
+                                </div>
+
+                                <div>
+                                    <button class="btn-primary w-full">Submit Booking</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-site">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-20">
+                <div class="md:col-span-6">
+                    <div class="flex flex-col lg:flex-row items-start gap-4 mb-10">
+                        <img src="assets/images/bukit-ciater-resort-and-spa-logo.png" alt="" class="foot-logo">
+                        <div>
+                            <h4>BUKIT CIATER RESORT & SPA</h4>
+                            <p class="text-slate-400 text-sm mt-2">Welcome to the best five-star deluxe hotel in New
+                                York. Hotel
+                                elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in
+                                quis the
+                                pellentesque velit. Donec id velit ac arcu posuere blane.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-3">
+                    <h5>Explore</h5>
+                    <ul class="foot-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rooms & Suites</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Spa Center</a></li>
+                        <li><a href="#">MICE Area</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="text-slate-400 text-sm md:col-span-3">
+                    <div class="flex gap-2">
+                        <img src="assets/images/phone-line.svg" alt="">
+                        <div class="flex flex-col">
+                            <p class="font[var(--barlow-condensed)]">RESERVATION</p>
+                            <p class="text-lg text-white">081 100 444 444</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 mt-10">
+                        <a href="#" class="social"><img src="assets/images/facebook-fill.svg" alt=""></a>
+                        <a href="#" class="social"><img src="assets/images/twitter-x-line.svg" alt=""></a>
+                        <a href="#" class="social"><img src="assets/images/instagram-fill.svg" alt=""></a>
+                        <a href="#" class="social"><img src="assets/images/youtube-fill.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© Copyright 2026 Bukit Ciater Resort & Spa</div>
+    </footer>
+
+    <script src="./assets/js/jquery-1.11.0.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.jQuery && typeof jQuery.fn.owlCarousel === 'function') {
+                // optional carousels initialisation
+            }
+        });
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

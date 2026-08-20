@@ -132,4 +132,81 @@ $(document).ready(function(){
     $(".amenities-tab-item").removeClass("show");
     $($(this).attr("href")).addClass("show");
   });
+
+  
+    // add/remove "in-focus" on .inp-group when its input is focused
+    $(document).on('focusin', '.book-form .inp-group input, .book-form .inp-group textarea, .book-form .inp-group select', function() {
+        $(this).closest('.inp-group').addClass('in-focus');
+    });
+
+    $(document).on('focusout', '.book-form .inp-group input, .book-form .inp-group textarea, .book-form .inp-group select', function() {
+        var $el = $(this);
+        var $group = $el.closest('.inp-group');
+        var hasValue = false;
+
+        if ($el.is(':checkbox') || $el.is(':radio')) {
+            hasValue = $el.is(':checked');
+        } else {
+            hasValue = $.trim($el.val() || '') !== '';
+        }
+
+        if (!hasValue) {
+            $group.removeClass('in-focus');
+        }
+    });
+
+    // ensure datepicker appears when clicking label, input, or icon inside .book-form
+    $(document).on('click', '.book-form .inp-group label, .book-form .inp-group input[type="date"], .book-form .inp-group .icon', function(e) {
+        var $group = $(this).closest('.inp-group');
+        var $input = $group.find('input[type="date"]').first();
+        if (!$input.length) return;
+
+        // focus the input so styles update
+        $input.focus();
+
+        // modern browsers expose showPicker() for <input type="date">
+        var input = $input.get(0);
+        if (input && typeof input.showPicker === 'function') {
+            try { input.showPicker(); } catch (err) { /* ignore */ }
+        }
+    });
+
+
+    // add/remove "in-focus" on .inp-group when its input is focused
+    $(document).on('focusin', '.book-form-2 .inp-group input, .book-form-2 .inp-group textarea, .book-form-2 .inp-group select', function() {
+        $(this).closest('.inp-group').addClass('in-focus');
+    });
+
+    $(document).on('focusout', '.book-form-2 .inp-group input, .book-form-2 .inp-group textarea, .book-form-2 .inp-group select', function() {
+        var $el = $(this);
+        var $group = $el.closest('.inp-group');
+        var hasValue = false;
+
+        if ($el.is(':checkbox') || $el.is(':radio')) {
+            hasValue = $el.is(':checked');
+        } else {
+            hasValue = $.trim($el.val() || '') !== '';
+        }
+
+        if (!hasValue) {
+            $group.removeClass('in-focus');
+        }
+    });
+
+    // ensure datepicker appears when clicking label, input, or icon inside .book-form
+    $(document).on('click', '.book-form-2 .inp-group label, .book-form-2 .inp-group input[type="date"], .book-form-2 .inp-group .icon', function(e) {
+        var $group = $(this).closest('.inp-group');
+        var $input = $group.find('input[type="date"]').first();
+        if (!$input.length) return;
+
+        // focus the input so styles update
+        $input.focus();
+
+        // modern browsers expose showPicker() for <input type="date">
+        var input = $input.get(0);
+        if (input && typeof input.showPicker === 'function') {
+            try { input.showPicker(); } catch (err) { /* ignore */ }
+        }
+    });
+
 });

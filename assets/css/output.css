@@ -2019,6 +2019,66 @@ video {
   color: rgb(226 232 240 / var(--tw-text-opacity, 1));
 }
 
+.amenities-tab-item {
+  display: none;
+}
+
+.amenities-tab-item.show {
+  display: block;
+}
+
+.book-form-2 input,
+  .book-form-2 select,
+  .book-form-2 textarea {
+  width: 100%;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.book-form-2 input:focus,
+  .book-form-2 select:focus,
+  .book-form-2 textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.book-form-2 label {
+  pointer-events: none;
+  position: absolute;
+  top: 0.25rem;
+  left: 0px;
+  z-index: 10;
+  width: 75%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.book-form-2 .inp-group.in-focus label {
+  top: -0.5rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--brand-forest);
+}
+
+.sim-parameter select {
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: rgba(255,255,255,0.3);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding: 0.5rem;
+}
+
 .visible {
   visibility: visible;
 }
@@ -2173,6 +2233,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -2245,6 +2309,10 @@ video {
   height: 1.5rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -2253,8 +2321,16 @@ video {
   min-height: 120px;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-12 {
   width: 3rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-5 {
@@ -2276,6 +2352,10 @@ video {
 
 .min-w-0 {
   min-width: 0px;
+}
+
+.min-w-52 {
+  min-width: 13rem;
 }
 
 .max-w-2xl {
@@ -2314,10 +2394,6 @@ video {
 
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
@@ -2724,6 +2800,10 @@ video {
   color: rgb(255 255 255 / 0.7);
 }
 
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
+}
+
 .text-white\/90 {
   color: rgb(255 255 255 / 0.9);
 }
@@ -2998,6 +3078,27 @@ h1, h2, h3, h4, h5, h6{
   font-family: var(--barlow-condensed);
 }
 
+.book-form .inp-group label {
+  position: absolute;
+  width: 70%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.book-form .inp-group.in-focus label {
+  pointer-events: none;
+  top: -0.5rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .hotel-card {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -3052,14 +3153,6 @@ h1, h2, h3, h4, h5, h6{
 .hotel-card .price span {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.amenities-tab-item {
-  display: none;
-}
-
-.amenities-tab-item.show {
-  display: block;
 }
 
 .focus\:border-amber-500:focus {
@@ -3139,6 +3232,10 @@ h1, h2, h3, h4, h5, h6{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3185,4 +3282,6 @@ h1, h2, h3, h4, h5, h6{
     padding-right: 2.5rem;
   }
 }
+
+
 

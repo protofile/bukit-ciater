@@ -97,6 +97,12 @@ h1, h2, h3, h4, h5, h6{
   @apply mb-2 text-white;
   font-family: var(--barlow-condensed);
 }
+.book-form .inp-group label{
+  @apply absolute py-2 bg-white w-[70%] transition-all;
+}
+.book-form .inp-group.in-focus label{
+  @apply text-xs py-0 -top-2 pointer-events-none;
+}
 
 .hotel-card{
   @apply grid grid-cols-12 items-center border border-slate-200 rounded-[3px] overflow-hidden;
@@ -873,12 +879,31 @@ h1, h2, h3, h4, h5, h6{
   .footer-site {
     @apply bg-black text-slate-200 pt-12;
   }
+
+  .amenities-tab-item{
+    @apply hidden;
+  }
+  .amenities-tab-item.show{
+    @apply block;
+  }
+
+  .book-form-2 input,
+  .book-form-2 select,
+  .book-form-2 textarea{
+    @apply border-b border-slate-200 py-4 w-full focus:outline-none; 
+  }
+  .book-form-2 label{
+    @apply absolute top-1 left-0 py-3 bg-white z-10 w-[75%] transition-all pointer-events-none;
+  }
+  .book-form-2 .inp-group.in-focus label{
+    @apply text-xs -top-2 py-0 text-[var(--brand-forest)];
+  }
+
+  .sim-parameter select{
+    @apply p-2 bg-white border border-[rgba(255,255,255,0.3)] rounded-[3px];
+  }
+
 }
 
-.amenities-tab-item{
-  @apply hidden;
-}
-.amenities-tab-item.show{
-  @apply block;
-}
+
 

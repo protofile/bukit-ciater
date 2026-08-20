@@ -192,77 +192,82 @@
 
         <section class="py-24 bg-[var(--accent-cream)]">
             <div class="container">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <div class="col-span-1">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-5 items-center">
+                    <div class="col-span-2">
                         <div class="section-title mb-10">
                             <div class="subtitle">INVESTMENT SIMULATION</div>
                             <h3>Projected Returns of the Investment</h3>
                         </div>
-                        <div class="grid grid-cols-2 gap-5 mb-5">
+                        <div class="grid grid-cols-3 gap-5 mb-5">
                             <div class="col-span-1">
                                 <div
                                     class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
-                                    <p class="leading-5">Projected Rental Yield Up To</p>
-                                    <div class="text-4xl text-right">57%</div>
+                                    <p class="leading-5">Target Occupancy</p>
+                                    <div id="targetOccupancy" class="text-4xl text-right result">
+                                        <!--Target Ocupancy value-->
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-span-1">
                                 <div
                                     class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
-                                    <p class="leading-5">Projected Capital Growth</p>
-                                    <div class="text-4xl text-right">34%</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-5">
-                            <div class="col-span-1">
-                                <div
-                                    class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
-                                    <p class="leading-5">Break-even Period</p>
-                                    <div class="text-4xl text-right">5thn</div>
+                                    <p class="leading-5">Gross Yield</p>
+                                    <div id="grossYieldCard" class="text-4xl text-right result"><!--Gross Yield value-->
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-span-1">
                                 <div
                                     class="flex flex-col justify-between gap-2 bg-white rounded-[3px] px-6 py-4 min-h-[120px]">
-                                    <p class="leading-5">AVG Annual ROI</p>
-                                    <div class="text-4xl text-right">12%</div>
+                                    <p class="leading-5">Break Even</p>
+                                    <div id="breakEvenCard" class="text-4xl text-right result"><!--Net Yield value-->
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 md:col-span-2 bg-[var(--brand-forest)] rounded-[3px]">
+                    <div class="col-span-2 md:col-span-2 bg-[var(--brand-forest)] rounded-[3px]">
                         <div class="p-8">
                             <h4 class="text-white text-2xl mb-8">Ilustrasi 1 BR Private Pool Villa</h4>
-                            <div
+
+                            <div class="flex flex-col sim-parameter mb-6">
+                                <div class="flex items-center gap-3">
+                                    <label for="simType" class="text-white/80 w-28">Type</label>
+                                    <select id="simType" name="simType" class="min-w-52">
+                                        <option value="ppv-2br">Private Pool Villa - 2BR</option>
+                                        <option value="ppv-3br">Private Pool Villa - 3BR</option>
+                                        <option value="pv-1br">Pool Villa - 1BR</option>
+                                        <option value="pv-2br">Pool Villa - 2BR</option>
+                                    </select>
+                                </div>
+                                <div class="flex items-center gap-3 mt-3">
+                                    <label for="simPayment" class="text-white/80 w-28">Payment</label>
+                                    <select id="simPayment" name="simPayment" class="min-w-52">
+                                        <option value="full">Full Payment</option>
+                                        <option value="6m">6-Month Plan</option>
+                                        <option value="12m">12-Month Plan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div <div
                                 class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
-                                <p>Harga awal</p>
-                                <p>Rp 3.900.000.000</p>
+                                <p>Price</p>
+                                <p id="priceValue" class="result"><!--Price Value--></p>
                             </div>
                             <div
                                 class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
-                                <p>Estimasi occupancy</p>
-                                <p>72%</p>
+                                <p>Rate/night</p>
+                                <p id="rateValue" class="result"><!--Rate/Night value--></p>
                             </div>
                             <div
                                 class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
-                                <p>Average nightly rate</p>
-                                <p>Rp 4.500.000</p>
+                                <p>Annual Gross Income</p>
+                                <p id="annualGrossValue" class="result"><!--Annual Gross Income value--></p>
                             </div>
                             <div
                                 class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
-                                <p>Gross rental/tahun</p>
-                                <p>Rp 1.180.000.000</p>
-                            </div>
-                            <div
-                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
-                                <p>Net to owner (after 35% mgmt)</p>
-                                <p>Rp 768.000.000</p>
-                            </div>
-                            <div
-                                class="flex justify-between border-b border-b-[rgba(255,255,255,0.15)] text-white text-sm py-3">
-                                <p>Yield</p>
-                                <p>19,6%</p>
+                                <p>Annual Net Income</p>
+                                <p id="annualNetValue" class="result"><!--Annual Net Income--></p>
                             </div>
                         </div>
                     </div>
@@ -553,6 +558,179 @@
                 console.error('Owl Carousel is not available. jQuery version:', window.jQuery ? jQuery.fn.jquery : 'none', 'owlCarousel function:', window.jQuery ? typeof jQuery.fn.owlCarousel : 'undefined');
             }
         });
+    </script>
+    <script>
+        // Investment simulator data and UI binding
+        (function () {
+            const data = {
+                "ppv-2br_full": {
+                    price: 2875950000,
+                    rate: 3300000,
+                    occupancy: 0.7,
+                    annualGross: 831600000,
+                    annualNet: 582120000,
+                    grossYield: 0.2892,
+                    netYield: 0.2024,
+                    breakEven: 4.9
+                },
+                "ppv-2br_6m": {
+                    price: 3205125000,
+                    rate: 3300000,
+                    occupancy: 0.7,
+                    annualGross: 831600000,
+                    annualNet: 582120000,
+                    grossYield: 0.2595,
+                    netYield: 0.1816,
+                    breakEven: 5.5
+                },
+                "ppv-2br_12m": {
+                    price: 3465000000,
+                    rate: 3300000,
+                    occupancy: 0.7,
+                    annualGross: 831600000,
+                    annualNet: 582120000,
+                    grossYield: 0.24,
+                    netYield: 0.1680,
+                    breakEven: 6.0
+                },
+                "ppv-3br_full": {
+                    price: 3788950000,
+                    rate: 4950000,
+                    occupancy: 0.7,
+                    annualGross: 1247400000,
+                    annualNet: 873180000,
+                    grossYield: 0.3292,
+                    netYield: 0.2305,
+                    breakEven: 4.3
+                },
+                "ppv-3br_6m": {
+                    price: 4222625000,
+                    rate: 4950000,
+                    occupancy: 0.7,
+                    annualGross: 1247400000,
+                    annualNet: 873180000,
+                    grossYield: 0.2954,
+                    netYield: 0.2068,
+                    breakEven: 4.8
+                },
+                "ppv-3br_12m": {
+                    price: 4565000000,
+                    rate: 4950000,
+                    occupancy: 0.7,
+                    annualGross: 1247400000,
+                    annualNet: 873180000,
+                    grossYield: 0.2733,
+                    netYield: 0.1913,
+                    breakEven: 5.2
+                },
+                "pv-1br_full": {
+                    price: 2026860000,
+                    rate: 1815000,
+                    occupancy: 0.7,
+                    annualGross: 457380000,
+                    annualNet: 320166000,
+                    grossYield: 0.2257,
+                    netYield: 0.1580,
+                    breakEven: 6.3
+                },
+                "pv-1br_6m": {
+                    price: 2258850000,
+                    rate: 1815000,
+                    occupancy: 0.7,
+                    annualGross: 457380000,
+                    annualNet: 320166000,
+                    grossYield: 0.2025,
+                    netYield: 0.1417,
+                    breakEven: 7.1
+                },
+                "pv-1br_12m": {
+                    price: 2442000000,
+                    rate: 1815000,
+                    occupancy: 0.7,
+                    annualGross: 457380000,
+                    annualNet: 320166000,
+                    grossYield: 0.1873,
+                    netYield: 0.1311,
+                    breakEven: 7.6
+                },
+                "pv-2br_full": {
+                    price: 2168375000,
+                    rate: 2475000,
+                    occupancy: 0.7,
+                    annualGross: 623700000,
+                    annualNet: 436590000,
+                    grossYield: 0.2876,
+                    netYield: 0.2013,
+                    breakEven: 5.0
+                },
+                "pv-2br_6m": {
+                    price: 2416562500,
+                    rate: 2475000,
+                    occupancy: 0.7,
+                    annualGross: 623700000,
+                    annualNet: 436590000,
+                    grossYield: 0.2581,
+                    netYield: 0.1807,
+                    breakEven: 5.5
+                },
+                "pv-2br_12m": {
+                    price: 2612500000,
+                    rate: 2475000,
+                    occupancy: 0.7,
+                    annualGross: 623700000,
+                    annualNet: 436590000,
+                    grossYield: 0.2387,
+                    netYield: 0.1671,
+                    breakEven: 6.0
+                }
+            };
+
+            function fmtIDR(value) {
+                if (value === null || value === undefined) return '-';
+                return 'IDR ' + Number(value).toLocaleString('id-ID');
+            }
+
+            function fmtPercent(value) {
+                if (value === null || value === undefined) return '-';
+                return (value * 100).toFixed(2) + '%';
+            }
+
+            const typeEl = document.getElementById('simType');
+            const paymentEl = document.getElementById('simPayment');
+
+            const priceEl = document.getElementById('priceValue');
+            const rateEl = document.getElementById('rateValue');
+            const annualGrossEl = document.getElementById('annualGrossValue');
+            const annualNetEl = document.getElementById('annualNetValue');
+            const targetOccEl = document.getElementById('targetOccupancy');
+            const grossYieldEl = document.getElementById('grossYieldCard');
+            const breakEvenEl = document.getElementById('breakEvenCard');
+
+            function updateUI() {
+                const key = `${typeEl.value}_${paymentEl.value}`;
+                const row = data[key];
+                if (!row) return;
+
+                priceEl.textContent = fmtIDR(row.price);
+                rateEl.textContent = fmtIDR(row.rate);
+                annualGrossEl.textContent = fmtIDR(row.annualGross);
+                annualNetEl.textContent = fmtIDR(row.annualNet);
+
+                targetOccEl.textContent = Math.round(row.occupancy * 100) + '%';
+                grossYieldEl.textContent = fmtPercent(row.grossYield);
+                breakEvenEl.textContent = row.breakEven + ' yrs';
+            }
+
+            // init default
+            if (typeEl && paymentEl) {
+                typeEl.addEventListener('change', updateUI);
+                paymentEl.addEventListener('change', updateUI);
+                // set defaults
+                typeEl.value = typeEl.value || 'ppv-2br';
+                paymentEl.value = paymentEl.value || 'full';
+                updateUI();
+            }
+        })();
     </script>
     <script src="./assets/js/main.js"></script>
     <script>
