@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6{
   @apply bg-[var(--accent-cream)] py-12 px-0 md:px-24 md:py-24;
 }
 .vision-card{
-  @apply p-8 flex flex-col items-start gap-4 bg-white rounded-[3px];
+  @apply p-8 flex flex-col items-start gap-4 bg-white rounded-[3px] h-full;
 }
 
 .booking-box{
@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .section-title h2{
-    @apply text-[64px] font-normal text-[var(--accent-brown)] mb-4;
+    @apply text-[56px] font-normal text-[var(--accent-brown)] mb-4;
   }
   .section-title h3{
     @apply text-5xl;
